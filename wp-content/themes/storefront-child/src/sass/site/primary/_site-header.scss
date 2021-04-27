@@ -1,0 +1,230 @@
+#masthead {
+  position: fixed;
+  width: 102%;
+  margin-left: -1px;
+
+  &.site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+
+    .storefront-primary-navigation {
+      display: none;
+    }
+  }
+
+  .col-full {
+    height: 100% !important;
+    width: 100%;
+    max-width: 90%;
+    margin: 0;
+
+    .main-navigation {
+  		text-align: right;
+  		text-transform: uppercase;
+  		font-size: 11px;
+  		font-weight: 700;
+  		height: 50px;
+  		// margin-left: -2em;
+      margin-right: 10px;
+
+      .menu-toggle {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        border: none;
+        float: left;
+        margin-left: 24px;
+        padding-bottom: 24px;
+      }
+      .handheld-navigation {
+        .menu {
+          .menu-item {
+            text-align: left;
+            padding-left: 50px;
+            background-color: $color__background-site-header-sub-menu;
+            border-bottom: 1px solid $color__background-site-header-underline;
+
+            .sub-menu {
+              .menu-item {
+                background-color: unset;
+                border-bottom: 1px solid $color__background-site-header-underline;
+                padding-left: 10px;
+
+                &:last-child {
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+  	}
+
+    .site-branding {
+      width: 100%;
+      margin: 0;
+      padding-right: 30px;
+
+      .custom-logo-link {
+        .custom-logo {
+          width: 50vw;
+        }
+      }
+
+      a {
+        img {
+          max-width: 270px;
+          padding: 10px 0 !important;
+          margin: auto;
+        }
+      }
+    }
+
+    #site-header-cart {
+      width: 0px;
+
+      li {
+        .cart-contents {
+
+          &::after {
+            content: "\f07a";
+            height: 1.5em;
+          }
+
+          a {
+            padding: 50px;
+          }
+
+          .woocommerce-Price-amount {
+            display: none;
+          }
+        }
+
+        .widget_shopping_cart {
+          width: 200px;
+        }
+      }
+    }
+
+    .site-header-cart {
+      li {
+        .cart-contents {
+          .count {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .site-search {
+      .widget {
+        .woocommerce-product-search {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.page {
+  .col-full {
+    .entry-header {
+      display: none;
+      .entry-title {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.storefront-breadcrumb {
+  visibility: hidden;
+}
+
+
+@media (min-width: $size__tablet-breakpoint) {
+  #masthead {
+    .col-full {
+      display: flex;
+      align-items: center;
+      height: 60px;
+
+      .site-branding {
+        .custom-logo-link {
+          .custom-logo {
+            width: 20vw;
+            padding-bottom: 0;
+            margin-left: 40px;
+          }
+        }
+
+        a {
+          img {
+            margin: unset;
+          }
+        }
+      }
+
+      .main-navigation {
+        .primary-navigation {
+          .menu {
+            .cart-number {
+              left: 30px;
+              z-index: 1;
+
+              .cart-number-link {
+                background-color: #ff0000BF;
+                padding: 0 5px;
+                border-radius: 30px;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+
+      .site-header-cart {
+        li {
+
+          .cart-contents {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .woocommerce-active .site-header div.site-branding {
+    width: auto;
+  }
+}
+
+@media (min-width: $size__desktop-breakpoint) {
+  #masthead {
+    .col-full {
+      .site-branding {
+        .custom-logo-link {
+          .custom-logo {
+            width: 50vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-navigation ul.menu, .main-navigation ul.nav-menu {
+    overflow: visible;
+    margin-left: 0.1em;
+    -webkit-transition: none;
+    transition: none;
+}

@@ -1,0 +1,38 @@
+/* PLP PDP Meter */
+
+.donation-percentage-outside, .donation-percentage-inside, .donation-percentage-user {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.donation-percentage-outside {
+  background-color: grey;
+  box-shadow: grey 1px 2px 2px
+}
+
+.donation-percentage-inside {
+  background-color: #2e60a8;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.donation-percentage-user {
+  background-color: green;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.rounded-border {
+  border-radius: 13px;
+}
+
+.rounded-border-top {
+  border-top-left-radius: 13px;
+}
+
+.rounded-border-bottom {
+  border-bottom-left-radius: 13px;
+}
+
+/* END Meter */

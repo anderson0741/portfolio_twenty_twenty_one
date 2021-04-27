@@ -1,0 +1,26 @@
+/**
+ * Checkout
+ */
+body.woocommerce-checkout {
+  .woocommerce {
+    button, input[type=submit] {
+      @include font-size(1);
+    }
+
+    .checkout {
+      .woocommerce-checkout-review-order {
+        #payment {
+          .methods {
+            .wc_payment_method {
+              label {
+                &::before {
+                  color: #1E5FAE;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

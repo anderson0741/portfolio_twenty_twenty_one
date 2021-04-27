@@ -1,0 +1,112 @@
+/**
+ * Products
+ */
+
+body.woocommerce.archive{
+  .hfeed {
+	  .storefront-breadcrumb {
+		  display: none;
+	  }
+	  .site-content {
+      margin-top: 50px;
+		  .col-full {
+			  max-width: 100%;
+        margin: 0;
+			  padding: 0;
+
+			  .content-area {
+				  .site-main {
+					  .woocommerce-products-header {
+              padding: 0;
+
+              .dollarclub-header-outer-wrapper {
+                padding: 0;
+                margin-bottom: 40px;
+
+                .dollarclub-header-wrapper {
+                  .dollarclub-header-content {
+                    background: unset !important;
+                    position: absolute;
+                    top: 0;
+                  }
+                }
+              }
+						  .woocommerce-products-header__title {
+							  display: none;
+						  }
+					  }
+					  .storefront-sorting {
+						  display: none;
+					  }
+
+					  .products {
+						  max-width: 80%;
+						  margin: auto;
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              align-items: stretch;
+
+						  .product {
+                display: flex;
+
+							  .woocommerce-LoopProduct-link {
+								  display: flex;
+								  flex-direction: column;
+                  flex-grow: 1;
+                  align-items: center;
+                  width: 100%;
+
+								  .product-title {
+                    order: 0;
+
+									  h2 {
+										  font-size: 2rem;
+										  font-weight: 400;
+									  }
+								  }
+
+                  .dollar-club-title-grow {
+                    order: 1;
+                    flex-grow: 1;
+                  }
+
+                  img {
+                    order: 2;
+                  }
+							  }
+							  .donation-percentage-outside {
+                  order: 3;
+									width: 100%;
+									align-self: center;
+							  }
+						  }
+					  }
+				  }
+			  }
+		  }
+	  }
+  }
+}
+
+@media (min-width: $size__desktop-breakpoint) {
+  body.woocommerce.archive {
+    .hfeed {
+  	  .site-content {
+  		  .col-full {
+  			  .content-area {
+  				  .site-main {
+  					  .products {
+  						  .product {
+  							  .donation-percentage-outside {
+  									width: 70%;
+  							  }
+  						  }
+  					  }
+  				  }
+  			  }
+  		  }
+  	  }
+    }
+  }
+}

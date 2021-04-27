@@ -1,0 +1,63 @@
+/*
+Theme Name: DollarClub
+
+WooCommerce styles override
+*/
+
+/**
+ * WooCommerce color variables
+ */
+$woocommerce__color-error: #e2401c;
+$woocommerce__color-success: #f7f7f7;
+$woocommerce__color-info: #f7f7f7;
+
+/**
+ * Imports
+ */
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/**
+ * Shop tables
+ */
+// @import "shop/tables";
+
+/**
+ * Products
+ */
+@import "shop/my-account";
+
+/**
+ * Products
+ */
+@import "shop/products";
+
+/**
+ * Single product
+ */
+@import "shop/single-product";
+
+/**
+ * Cart
+ */
+// @import "shop/cart";
+
+/**
+ * Checkout
+ */
+@import "shop/checkout";
+
+/**
+ * Order Received
+ */
+// @import "shop/order-received";
+
+/**
+ * General WooCommerce components
+ */
+// @import "shop/components";
+
+/**
+ * WooCommerce widgets
+ */
+// @import "shop/widgets";

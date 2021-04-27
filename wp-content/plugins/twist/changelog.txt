@@ -1,0 +1,10 @@
+<p><strong>v3.1.3 – 3 Oct 20</strong></p>
+<ul>
+    <li>Enhancement: New filter 'wpgs_add_img_class' for add class into product gallery image tag</li>
+    <li>Fix: CSS transform confict on tablet devices</li>
+    <li>Fix: Lightbox z-index issue for some themes</li>
+</ul>
+<p><strong>v3.1.2 – 2 Oct 20</strong></p>
+<ul>
+    <li>Fix: Fancybox 3 conflict with some themes</li>
+</ul>

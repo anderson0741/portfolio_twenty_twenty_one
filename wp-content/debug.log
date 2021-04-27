@@ -1,0 +1,182 @@
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Connection refused in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:48 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:48 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:48 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:48 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:48 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:48 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:48 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:48 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:48 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:48 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:48 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:48 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:48 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:48 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:48 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:48 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:48 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:48 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:48 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:48 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:48 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:48 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:48 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:48 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:48 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:48 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:48 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:48 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:48 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:48 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:48 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:48 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:48 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:48 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:48 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:48 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:48 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:48 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:48 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:48 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:48 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:48 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:48 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:48 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:48 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:49 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:49 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:49 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:49 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:49 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:49 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:49 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:49 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:49 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:49 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:49 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:49 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:49 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:49 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:49 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:49 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:49 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:49 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:49 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:49 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:49 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:49 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:49 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:49 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:49 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:49 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:49 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:49 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:49 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:49 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:49 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:49 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:49 UTC] PHP Warning:  mysqli_real_connect(): Property access is not allowed yet in /var/www/html/wp-includes/wp-db.php on line 1653
+[22-Jan-2021 03:31:49 UTC] PHP Stack trace:
+[22-Jan-2021 03:31:49 UTC] PHP   1. {main}() /bin/wp-cli.phar:0
+[22-Jan-2021 03:31:49 UTC] PHP   2. include() /bin/wp-cli.phar:4
+[22-Jan-2021 03:31:49 UTC] PHP   3. include() phar:///bin/wp-cli.phar/php/boot-phar.php:11
+[22-Jan-2021 03:31:49 UTC] PHP   4. WP_CLI\bootstrap() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Jan-2021 03:31:49 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process($state = class WP_CLI\Bootstrap\BootstrapState { private $state = [] }) phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Jan-2021 03:31:49 UTC] PHP   6. WP_CLI\Runner->start() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Jan-2021 03:31:49 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[22-Jan-2021 03:31:49 UTC] PHP   8. require() phar:///bin/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[22-Jan-2021 03:31:49 UTC] PHP   9. require_wp_db() /var/www/html/wp-settings.php:124
+[22-Jan-2021 03:31:49 UTC] PHP  10. wpdb->__construct($dbuser = 'root', $dbpassword = '15Cd4E52F488lfs', $dbname = 'wordpress', $dbhost = 'mysql') /var/www/html/wp-includes/load.php:527
+[22-Jan-2021 03:31:49 UTC] PHP  11. wpdb->db_connect($allow_bail = *uninitialized*) /var/www/html/wp-includes/wp-db.php:632
+[22-Jan-2021 03:31:49 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = NULL; public $client_info = NULL; public $client_version = NULL; public $connect_errno = NULL; public $connect_error = NULL; public $errno = NULL; public $error = NULL; public $error_list = NULL; public $field_count = NULL; public $host_info = NULL; public $info = NULL; public $insert_id = NULL; public $server_info = NULL; public $server_version = NULL; public $stat = NULL; public $sqlstate = NULL; public $protocol_version = NULL; public $thread_id = NULL; public $warning_count = NULL }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653
+[22-Jan-2021 03:31:49 UTC] PHP  12. mysqli_real_connect($link = class mysqli { public $affected_rows = FALSE; public $client_info = 'mysqlnd 5.0.12-dev - 20150407 - $Id: 7cc7cc96e675f6d72e5cf0f267f48e167c2abb23 $'; public $client_version = 50012; public $connect_errno = 2002; public $connect_error = 'Connection refused'; public $errno = 2002; public $error = 'Connection refused'; public $error_list = FALSE; public $field_count = FALSE; public $host_info = FALSE; public $info = FALSE; public $insert_id = FALSE; public $server_info = FALSE; public $server_version = FALSE; public $stat = NULL; public $sqlstate = FALSE; public $protocol_version = FALSE; public $thread_id = FALSE; public $warning_count = FALSE }, $host = 'mysql', $user = 'root', $password = '15Cd4E52F488lfs', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /var/www/html/wp-includes/wp-db.php:1653

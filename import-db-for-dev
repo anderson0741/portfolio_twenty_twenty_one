@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+if [[ $# -ne 1 && $# -ne 3 ]] ; then
+    echo "Usage: $0 <PATH_TO_SQL_FILE> [<CURRENT_ADMIN_EMAIL> <NEW_ADMIN_EMAIL>]"
+    exit 1
+fi
+
+if [ ! -f $1 ]; then
+    echo "Error: SQL file not found!"
+    echo "Usage: $0 <PATH_TO_SQL_FILE> [<CURRENT_ADMIN_EMAIL> <NEW_ADMIN_EMAIL>]"
+    exit 1
+fi
+
+#import the database
+echo 'Importing SQL...'
+docker exec -i lcaportfolio_wpdb_1 mysql -p17Cd4E57F438lfs wordpress < $1
+
+#if number of arguements are correct, replace current email with new email
+if [[ $# -eq 3 ]]; then
+    echo 'Renaming Current Email to New Email...'
+    docker exec -it lcaportfolio_wp_1 wp search-replace $2 $3 --all-tables
+fi
+
+#rename database
+echo 'Renaming Site...'
+docker exec -it lcaportfolio_wp_1 wp search-replace 'https://dollarclub.net' 'http://127.0.0.1.xip.io:8050'
+echo 'Renaming The Rest of the Database...'
+docker exec -it lcaportfolio_wp_1 wp search-replace 'dollarclub.net' '127.0.0.1.xip.io:8050'
+# docker exec -it lcaportfolio_wp_1 wp search-replace '10.0.0.154.xip.io:8060' '127.0.0.1.xip.io:8050'
+
+echo -ne '\007'
+echo 'Finished importing and renaming LCA Portfolio Database'

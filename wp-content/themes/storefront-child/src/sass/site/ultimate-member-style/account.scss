@@ -1,0 +1,51 @@
+body.um-page-account {
+  #page {
+    .site-content {
+      .col-full {
+        .content-area {
+          .site-main {
+            .page {
+              .entry-content {
+                .um-account {
+                  .um-form {
+                    form {
+                      .um-account-side {
+                        padding-top: 25px;
+                      }
+
+                      .um-account-main {
+                        .um-account-tab {
+                          padding-top: 25px;
+
+                          div {
+                            max-width: 90%;
+                            flex-direction: column;
+
+                            .um-field {
+                              .woocommerce-input-wrapper {
+                                .um-form-field {
+                                  max-width: 90%;
+                                }
+                                .select2-container {
+                                  max-width: 90%;
+                                }
+                              }
+                            }
+
+                            #um-erase-data {
+                              max-width: 90%;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

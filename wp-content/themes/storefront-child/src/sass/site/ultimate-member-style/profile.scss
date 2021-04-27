@@ -1,0 +1,175 @@
+body.um-page-user {
+  #page {
+    .storefront-breadcrumb {
+      margin-bottom: 20px;
+    }
+
+    .site-content {
+      .col-full {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+
+        .content-area {
+          #main {
+            .entry-content {
+              .um {
+                .um-header {
+                  max-width: 90%;
+                  margin: auto;
+                }
+              }
+
+              .um-profile {
+                .um-form {
+                  .um-profile-navbar {
+                    &.um-followers-bar {
+                      display: flex;
+                      justify-content: center;
+
+                      .um-followers-rc {
+                        &:first-child {
+                          a {
+                            border-right: unset;
+                          }
+                        }
+                        a {
+                          border-left: 2px solid #eee !important;
+                        }
+                      }
+                    }
+                  }
+
+                  .um-profile-nav {
+                    display: flex;
+                    justify-content: center;
+                  }
+
+                  .um-profile-body {
+                    max-width: 80%;
+
+                    .my-account-plp {
+                      .woocommerce {
+                        .products {
+                          display: flex;
+                          justify-content: center;
+                          flex-wrap: wrap;
+                          align-items: stretch;
+                          max-width: 1500px;
+                          margin: auto;
+
+                          li {
+                            display: flex;
+                            margin-bottom: 0;
+
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              flex-grow: 1;
+                              align-items: center;
+                              width: 100%;
+
+                              .product-title {
+                                order: 0;
+                                max-width: 300px;
+
+                                h2 {
+                                  font-size: 2rem;
+                                  font-weight: 400;
+                                }
+                              }
+                              .dollar-club-title-grow {
+                                order: 1;
+                                flex-grow: 1;
+                              }
+                              img {
+                                order: 2;
+                                margin: auto;
+                                max-width: 300px;
+                                padding: 20px 0;
+                              }
+                              .donation-percentage-outside {
+                                order: 4;
+                                width: 300px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    &.myreferraltab {
+                      max-width: 500px;
+
+                      .referral-section {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #8080801a;
+                        padding: 25px 0;
+
+                        h3 {
+                          text-align: center;
+                          margin: 0;
+                          padding: 0 20px;
+                        }
+
+                        #dc-referral-link {
+                          color: $color__link;
+                        }
+
+                        button {
+                          border-radius: 25px;
+                          background-color: $color__background-top-bar;
+                          color: #fff;
+                          margin-top: 10px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $size__desktop-breakpoint) {
+  body.um-page-user {
+    #page {
+      .site-content {
+        .col-full {
+          .content-area {
+            #main {
+              .entry-content {
+                .um {
+                  .um-header {
+                    max-width: 90%;
+                    margin: auto;
+
+                    .um-profile-edit {
+                      .um-dropdown {
+                        right: 5% !important;
+
+                        .um-dropdown-b {
+                          .um-dropdown-arr {
+                            left: unset !important;
+                            right: 0px !important;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

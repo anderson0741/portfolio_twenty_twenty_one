@@ -1,0 +1,26 @@
+version: "2"
+services:
+  wpdb:
+    image: mariadb
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "8051:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 17Cd4E57F438lfs
+      MYSQL_DATABASE: wordpress
+  wp:
+    build:
+      context: ./
+      dockerfile: dockerfile
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "8050:80"
+    links:
+      - wpdb:mysql
+    environment:
+      WORDPRESS_DB_PASSWORD: 17Cd4E57F438lfs
+      XDEBUG_CONFIG: ${XDEBUG_CONFIG}
+volumes:
+  db_data:

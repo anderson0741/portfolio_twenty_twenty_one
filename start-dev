@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+docker-compose -f dev-docker-compose.yml -p lcaportfolio up -d
+
+echo "Server Now Running at 127.0.0.1:8050"
+echo "Database Now Running at 127.0.0.1:8051"

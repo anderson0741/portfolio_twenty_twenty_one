@@ -1,0 +1,137 @@
+body.um_groups-template-default {
+  #page {
+    #content {
+      .col-full {
+        .content-area {
+          .site-main {
+            .article-wrapper {
+              .um_groups {
+                .entry-content {
+                  .um {
+                    .um-group-single-header {
+                      .um-groups-directory {
+                        .um-group-item {
+                          .um-group-meta {
+                            ul {
+                              .privacy {
+                                display: none;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              #blog-widget {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+div.groups_list {
+  .um-groups-list {
+    .um-groups-directory-header {
+      display: flex;
+      justify-content: flex-end;
+
+      .um-group-form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+
+      }
+    }
+    .um-groups-directory {
+      .um-group-item {
+        .um-group-meta {
+          ul {
+            li {
+              &.privacy {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $size__tablet-breakpoint) {
+  div.groups_list {
+    .um-groups-list {
+      .um-groups-directory-header {
+        .um-group-form {
+          flex-direction: row;
+          flex-wrap: nowrap;
+          width: 600px;
+
+          .um-field {
+            &:first-child {
+              width: 225px;
+            }
+            &.um-field-select {
+              width: 225px;
+            }
+          }
+
+          .um-col-alt {
+            display: flex;
+            justify-content: center;
+            width: 125px;
+
+            .um-left {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $size__desktop-breakpoint) {
+  div.groups_list {
+    .um-groups-list {
+      .um-groups-directory-header {
+        display: flex;
+        justify-content: flex-end;
+
+        .um-group-form {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          width: 700px;
+
+          .um-field {
+            width: 200px;
+
+            &:first-child {
+              width: 200px;
+            }
+
+            &.um-field-select {
+              width: 200px;
+            }
+          }
+
+          .um-col-alt {
+            width: 200px;
+
+            .um-half {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

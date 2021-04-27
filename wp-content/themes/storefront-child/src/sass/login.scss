@@ -1,0 +1,54 @@
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+html {
+    height: 100%;
+}
+
+body {
+    &.login {
+        height: 100%;
+
+        #login {
+
+            h1 {
+                text-align: center;
+
+                a {
+                    margin: auto;
+                    width: 150px;
+                    height: 200px;
+                    background-image: url("../../assets/img/Dollar-Club-Logo.png");
+                    background-size: contain;
+                    margin-bottom: 25px;
+                }
+            }
+
+            #loginform {
+
+                .button {
+
+                    &.button-primary {
+                        color: $color__text-button;
+                        text-shadow: none;
+                        background-color: $color__background-button;
+                        background-image: none;
+                        border: 0;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            #nav, #backtoblog {
+                a {
+                    color: $color__link !important;
+                    transition: color 0.5s;
+
+                    &:hover {
+                        color: $color__link-hover !important;
+                    }
+                }
+            }
+        }
+    }
+}

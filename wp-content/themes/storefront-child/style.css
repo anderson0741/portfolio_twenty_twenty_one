@@ -1,0 +1,167 @@
+/*
+Theme Name: Storefront Child
+Version: 1.0
+Description: Child theme for Storefront.
+Author: Woo
+Author URI: http://woocommerce.com
+Template: storefront
+*/
+
+/* --------------- Theme customization starts here ----------------- */
+
+/* Style Classes */
+
+  .max-width-90 {
+    max-width: 90%;
+  }
+  .max-width-80 {
+    max-width: 80%;
+  }
+  .max-width-70 {
+    max-width: 70%;
+  }
+  .max-width-60 {
+    max-width: 60%;
+  }
+  .max-width-50 {
+    max-width: 50%;
+  }
+  .max-width-40 {
+    max-width: 40%;
+  }
+  .max-width-20 {
+    max-width: 20%;
+  }
+  .margin-auto {
+    margin: auto !important;
+  }
+  .width-640 {
+    max-width: 640px;
+  }
+  .white-font {
+    color: #fff;
+  }
+
+/* Style Classes End */
+
+/* Whole site */
+
+  a:focus, button:focus, .button.alt:focus, input:focus, textarea:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus {
+      outline-color: transparent;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+/* END */
+
+/* Home Page */
+
+  .home-title-text {
+    color: #fff;
+  }
+
+  .cat-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .cat-link a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 92px 15px 0;
+    transition: color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
+    z-index:1;
+    font-weight: 400;
+    text-shadow: 3px 1px 2px #808080;
+    background-color: rgba(128, 128, 128, 0.3) !important;
+  }
+
+  .cat-link a:hover {
+    background-color: rgba(46, 96, 168, 0.3) !important;
+  }
+
+  .category-boxes {
+    /* width: 50%; */
+  }
+
+  .home .site-content .col-full .content-area .site-main, .home .site-content .col-full .content-area .site-main .page {
+    padding: 0;
+  }
+
+  .storefront-product-categories, .storefront-recent-products, .storefront-popular-products, .storefront-best-selling-products {
+    display: none;
+  }
+
+  .home-title-text .wpb_wrapper h1 {
+    font-size: 5rem !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+  }
+
+  #home-banner-outer .vc_column-inner {
+    padding: 0;
+  }
+  #home-banner-outer .wpb_wrapper .wpb_text_column {
+    margin-bottom: 0;
+  }
+
+  #home-child-rescue .vc_column-inner {
+    padding: 0;
+  }
+  #home-child-rescue .dollarclub-sub-heading-2 {
+    padding-top: 25px;
+  }
+
+  .dollarclub-heading-1, .dollarclub-heading-2, .dollarclub-sub-heading-1, .dollarclub-sub-heading-2 {
+    text-shadow: 1px 2px 4px grey
+  }
+
+  .home-details-row .wpb_column .vc_column-inner {
+    padding: 0 !important;
+  }
+
+  .home-details-img .vc_column-inner {
+    padding: 0;
+  }
+
+  .home-details .wpb_column:first-child {
+    padding: 0;
+  }
+  .home-details .wpb_column:last-child {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  @media (min-width: 767px) {
+    .home-details-row .wpb_column .vc_column-inner {
+      padding: 35px 0 !important;
+    }
+
+    .home-details {
+      max-width: 90%;
+      margin: auto;
+    }
+
+    .category-boxes {
+      /* width: 20%; */
+    }
+
+    .cat-link {
+      font-size: 40px;
+    }
+  }
+
+/* Home End */
+
+/* Footer */
+
+/* Footer End */

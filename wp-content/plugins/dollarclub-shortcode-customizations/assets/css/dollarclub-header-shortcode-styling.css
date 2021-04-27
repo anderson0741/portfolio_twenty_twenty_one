@@ -1,0 +1,151 @@
+.dollarclub-header-inner-wrapper {
+  width: 100%;
+
+}
+
+.dollarclub-header-outer-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  background-color: #000;
+}
+
+.dollarclub-header-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.dollarclub-header-wrapper-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dollarclub-header-content {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  padding-top: 75px;
+  align-items: flex-start;
+  margin: auto;
+
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+  right: 0;
+}
+
+.dollarclub-header-content.center {
+  align-items: center;
+}
+
+.dollarclub-header-content.bottom {
+  align-items: flex-end;
+}
+
+.dollarclub-position-text {
+
+  padding: 10px 0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.dollarclub-position-text.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.dollarclub-position-text.right {
+  margin-left: auto;
+  margin-right: 0;
+  align-items: flex-end;
+}
+
+.dollarclub-heading-1 {
+  margin: 0;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.dollarclub-heading-2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.dollarclub-sub-heading-1 {
+  margin-top: 20px;
+  margin-bottom:0;
+  max-width:99%;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.dollarclub-sub-heading-2 {
+  margin-top:0;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 767px) {
+  .dollarclub-header-outer-wrapper {
+    padding-bottom: 0;
+  }
+
+  .dollarclub-header-content {
+    height: 100%;
+    padding-top: 62px;
+    position: static;
+    bottom: unset;
+    left: unset;
+    right: unset;
+    background: none !important;
+  }
+  .dollarclub-header-content.center {
+    padding-top: 0;
+  }
+
+  .dollarclub-position-text {
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .dollarclub-position-text.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .dollarclub-header-content {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .dollarclub-header-content {
+    max-width: 1600px;
+  }
+}
